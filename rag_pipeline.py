@@ -9,14 +9,24 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 # ── PDF Loader ──────────────────────────────────────────────
 def load_pdfs(data_folder="data/"):
-    print("Loading PDFs...")
+    print("Loading documents...")
     all_docs = []
     for filename in os.listdir(data_folder):
+        # Load PDFs
         if filename.endswith(".pdf"):
-            print(f"  Loading: {filename}")
+            print(f"  Loading PDF: {filename}")
             loader = PyPDFLoader(os.path.join(data_folder, filename))
             all_docs.extend(loader.load())
-    print(f"PDF pages loaded: {len(all_docs)} ✅")
+        # Load TXT files
+        elif filename.endswith(".txt"):
+            print(f"  Loading TXT: {filename}")
+            with open(os.path.join(data_folder, filename), "r", encoding="utf-8") as f:
+                text = f.read()
+            all_docs.append(Document(
+                page_content=text,
+                metadata={"source": filename}
+            ))
+    print(f"Total documents loaded: {len(all_docs)} ✅")
     return all_docs
 
 # ── HuggingFace Datasets ────────────────────────────────────
