@@ -31,7 +31,7 @@ Give detailed farming advice:"""
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},
         ],
-        max_tokens=1024,
+        max_tokens=512,
     )
 
     answer = response.choices[0].message.content
