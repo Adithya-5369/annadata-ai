@@ -36,16 +36,13 @@ Give detailed farming advice:"""
 
     answer = response.choices[0].message.content
 
-    # Remove <think> block — handles both closed and unclosed tags
     if "<think>" in answer:
         if "</think>" in answer:
             end = answer.find("</think>") + len("</think>")
             answer = answer[end:].strip()
         else:
-            # Model cut off inside think block — extract whatever is inside
             answer = answer.split("<think>")[-1].strip()
 
-    # Clean markdown formatting
     clean_lines = []
     for line in answer.split("\n"):
         line = line.strip()
