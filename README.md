@@ -13,16 +13,16 @@
 
 ## 📌 Overview
 
-**Annadata AI** is an intelligent multilingual agricultural advisory system built for Indian farmers. It delivers expert-level farming guidance in **10+ Indian languages** — including Hindi, Telugu, Kannada, Tamil, Malayalam, Marathi, Bengali, Gujarati, Punjabi, and Odia — powered by **Sarvam-105B LLM** and a **Retrieval Augmented Generation (RAG)** pipeline grounded in verified ICAR documents and HuggingFace agriculture datasets.
+**Annadata AI** is an intelligent multilingual agricultural advisory system built for Indian farmers. It delivers expert-level farming guidance in **10+ Indian languages** including Hindi, Telugu, Kannada, Tamil, Malayalam, Marathi, Bengali, Gujarati, Punjabi, and Odia powered by **Sarvam-105B LLM** and a **Retrieval Augmented Generation (RAG)** pipeline grounded in verified ICAR documents and HuggingFace agriculture datasets.
 
-A unique feature of Annadata AI is **code-mixed language support** — farmers can naturally type queries mixing their native language with English (e.g., *"मेरी wheat crop में yellow spots आ रहे हैं"*) and the system understands perfectly.
+A unique feature of Annadata AI is **code-mixed language support** where farmers can naturally type queries mixing their native language with English (e.g., *"मेरी wheat crop में yellow spots आ रहे हैं"*) and the system understands perfectly.
 
 ---
 
 ## 🎯 Problem Statement
 
 India has **140M+ farmers** but:
-- 70% cannot understand English — yet all ICAR research is published in English
+- 70% cannot understand English but almost ICAR research is published in English
 - Expert agricultural advice is inaccessible in villages (nearest KVK = 50+ km)
 - Crop losses due to delayed pest/disease diagnosis
 - Billions in govt subsidies unclaimed due to lack of scheme awareness
