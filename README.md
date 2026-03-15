@@ -48,7 +48,7 @@ Annadata AI bridges this gap by providing:
 | 🐛 Pest & Disease | Identify symptoms → get remedy instantly |
 | 🌦️ Weather Alerts | Farming-specific weather guidance |
 | 💰 Mandi Prices | Market price information |
-| 🏛️ Govt Schemes | PM Kisan, Fasal Bima explained simply |
+| 🏛️ Govt Schemes | 25+ schemes: PM Kisan, PMFBY, KCC, PMKSY and more |
 | 🪨 Soil Health | Fertilizer recommendations by crop & region |
 | 🔀 Code-Mixed | Handles mixed Hindi+English, Telugu+English queries |
 
@@ -115,9 +115,10 @@ Gradio UI Response
 |---|---|---|
 | ICAR Official PDFs | Crop guides, pest management | 1,147 pages |
 | PM Kisan Guidelines | Government scheme | 42 pages |
+| Government Schemes TXT | 25+ schemes complete guide | 1 file |
 | KisanVaani QA Dataset | Agriculture Q&A pairs | 2,000+ pairs |
 | Crop Recommendation | N/P/K/soil/climate data | 2,200 records |
-| **Total** | **Combined** | **~10,000+ chunks** |
+| **Total** | **Combined** | **~12,000+ chunks** |
 
 ---
 
@@ -130,6 +131,7 @@ Gradio UI Response
 | Top-k Retrieval (k=4) | ~78% relevant |
 | Avg Response Time | ~4.2 seconds |
 | Languages Supported | 11 (10 Indian + English) |
+| Knowledge Base Size | ~12,000+ chunks |
 
 ---
 
@@ -207,18 +209,6 @@ annadata-ai/
 - 📡 IoT soil sensor integration
 
 ---
-
-## 📖 References
-
-1. Sarvam AI — sarvam-translate:v1, sarvam-m (2024). https://www.sarvam.ai
-2. Gao et al. — Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, NeurIPS 2020
-3. Reimers & Gurevych — Sentence-BERT, EMNLP 2019
-4. AI4Bharat — IndicTrans2: Towards High-Quality & Accessible Machine Translation, TMLR 2023
-5. Johnson et al. — Billion-scale similarity search with GPUs (FAISS), IEEE 2021
-6. KisanVaani Agriculture QA Dataset — HuggingFace 2024
-
----
-
 
 ## Author
 
