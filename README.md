@@ -61,8 +61,6 @@ Farmer Input (Hindi/Telugu/Kannada/Mixed)
 - English
 - Code-Mixed (e.g. "मेरी wheat crop में yellow spots")
 
-## NLP Minor Project — B.Tech CSE
-
 ## Author
 
 **Adithya Sai Srinivas**  
