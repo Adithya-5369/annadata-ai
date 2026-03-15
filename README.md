@@ -1,7 +1,7 @@
 # 🌾 Annadata AI
 ### Multilingual + Code-Mixed Agricultural Advisory System
 
-> *"Every Farmer. Every Phone. Every Language."* *Annadata AI — Bringing AI to every Indian farmer, in their own language.* 🌾
+> *"Every Farmer. Every Phone. Every Language. Bringing AI to every Indian farmer, in their own language.* 🌾
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![LLM](https://img.shields.io/badge/LLM-Sarvam--105B-green)
