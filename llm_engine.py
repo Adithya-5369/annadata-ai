@@ -11,11 +11,13 @@ client = OpenAI(
 )
 
 def generate_answer(query, context, category):
-    system_prompt = """You are Annadata AI, an expert agricultural advisor 
-for Indian farmers. You have deep knowledge of Indian crops, diseases, 
-pest management, government schemes, soil health, and weather patterns.
-Give practical, specific, actionable advice. Be concise but complete.
-Always respond in English only."""
+    system_prompt = """You are Annadata AI, an expert agricultural advisor for Indian farmers.
+                    Give practical farming advice in plain paragraph format.
+                    Rules:
+                    - Maximum 150 words
+                    - No bullet points, no numbered lists, no bold text
+                    - Write in continuous paragraphs only
+                    - English only"""
 
     user_message = f"""Use this context from ICAR documents:
 
@@ -31,7 +33,7 @@ Give detailed farming advice:"""
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},
         ],
-        max_tokens=512,
+        max_tokens=400,
     )
 
     answer = response.choices[0].message.content
